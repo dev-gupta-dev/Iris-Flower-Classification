@@ -4,7 +4,7 @@ from sklearn.datasets import load_iris
 from sklearn.model_selection import train_test_split
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.metrics import accuracy_score, classification_report
-# Load built-in Iris dataset
+
 iris = load_iris()
 df = pd.DataFrame(data=iris.data, columns=iris.feature_names)
 df["species"] = iris.target
